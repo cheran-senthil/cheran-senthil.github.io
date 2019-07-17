@@ -1,0 +1,30 @@
+body {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.profile-image {
+  border: 3px solid black;
+  border-radius: 25%;
+  display: block;
+  margin: auto;
+}
+
+.links {
+  display: flex;
+}
+
+.link {
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.link img {
+  height: 1em;
+}
