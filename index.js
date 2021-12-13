@@ -15,14 +15,6 @@ const link = {
   resume: `./resume.pdf`,
 }
 
-const name = {
-  codeforces: 'Codeforces',
-  email: 'Email',
-  github: 'GitHub',
-  linkedin: 'LinkedIn',
-  resume: 'Resume',
-}
-
 const linksOrder = ['email', 'github', 'linkedin', 'codeforces', 'resume']
 
 const gravatarHash = CryptoJS.MD5(gravatarEmail.toLowerCase())
@@ -42,7 +34,6 @@ linksOrder.forEach(type => {
   image.src = `./images/${type}.png`
 
   linkElement.appendChild(image)
-  linkElement.appendChild(document.createTextNode('  ' + name[type]))
 
   links.appendChild(linkElement)
 })
