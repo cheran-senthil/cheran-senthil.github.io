@@ -4,18 +4,16 @@ const userIds = {
   codeforces: 'c1729',
   email: 'cheran.v.senthil@gmail.com',
   github: 'cheran-senthil',
-  linkedin: 'cheran-senthil',
 }
 
 const link = {
   codeforces: `https://codeforces.com/profile/${userIds.codeforces}`,
   email: `mailto:${userIds.email}`,
   github: `https://github.com/${userIds.github}`,
-  linkedin: `https://www.linkedin.com/in/${userIds.linkedin}`,
   resume: `./resume.pdf`,
 }
 
-const linksOrder = ['email', 'github', 'linkedin', 'codeforces', 'resume']
+const linksOrder = ['email', 'github', 'codeforces', 'resume']
 
 const gravatarHash = CryptoJS.MD5(gravatarEmail.toLowerCase())
 const profileImage = document.createElement('img')
